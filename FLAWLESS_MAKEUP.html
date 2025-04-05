@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Pemesanan Makeup Artist</title>
+
+    <!-- Custom Scripts -->
+    <script defer src="myJS.js"></script>
+    
+    <!-- Vanta.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body id="vanta-bg">
+
+    <header>
+        <div class="logo-title">
+            <img src="logo_makeup.jpg" alt="Logo Flawless Makeup" class="logo">
+            <h1>Flawless Makeup</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Service</a></li>
+                <li><a href="#booking">Booking</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HOME -->
+    <section id="home">
+        <button class="prev">&#10094;</button>
+    
+        <div class="carousel-wrapper">
+            <div class="carousel-container">
+                <img src="pengantin.jpg" class="slide active" alt="Makeup 1">
+                <img src="pesta.jpg" class="slide" alt="Makeup 2">
+                <img src="wisuda.jpg" class="slide" alt="Makeup 3">
+                <img src="photoshoot.png" class="slide" alt="Makeup 4">
+            </div>
+        </div>
+    
+        <button class="next">&#10095;</button>
+    
+        <div class="dots-container"></div>
+    </section>
+
+    <a href="https://wa.me/6285871217027" target="_blank" class="whatsapp-button">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Chat via WhatsApp">
+    </a>
+    
+    <!-- SERVICES -->
+    <section id="services">
+        <h2>Layanan Kami</h2>
+        <table class="service-table">
+            <thead>
+                <tr>
+                    <th>Jenis Layanan</th>
+                    <th>Harga</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Makeup Pengantin</td>
+                    <td>Rp 1.500.000</td>
+                </tr>
+                <tr>
+                    <td>Makeup Pesta</td>
+                    <td>Rp 750.000</td>
+                </tr>
+                <tr>
+                    <td>Makeup Wisuda</td>
+                    <td>Rp 500.000</td>
+                </tr>
+                <tr>
+                    <td>Makeup Photoshoot</td>
+                    <td>Rp 600.000</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    
+    <!-- BOOKING -->
+    <section id="booking">
+        <h2>Pesan Sekarang</h2>
+        <form>
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="phone">Nomor Telepon:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10,13}" placeholder="Contoh: 081234567890" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Contoh: email@domain.com" required>
+            
+            <label for="date">Tanggal:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="service">Pilih Layanan:</label>
+            <select id="service" name="service">
+                <option value="pengantin">Makeup Pengantin</option>
+                <option value="pesta">Makeup Pesta</option>
+                <option value="wisuda">Makeup Wisuda</option>
+                <option value="photoshoot">Makeup Photoshoot</option>
+            </select>
+            
+            <button type="submit">Pesan Sekarang</button>
+        </form>
+    </section>
+    
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2>Hubungi Kami</h2>
+        <div class="contact-card">
+            <div class="contact-item">
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email Icon" class="icon">
+                <p>rifkirochiman22@upi.edu</p>
+            </div>
+            <div class="contact-item">
+                <img src="https://cdn-icons-png.flaticon.com/512/597/597177.png" alt="Phone Icon" class="icon">
+                <p>0858-7121-7027</p>
+            </div>
+        </div>
+    </section>
+    
+    
+    <footer>
+        <p>&copy; BY RIFKI ROCHIMAN</p>
+    </footer>
+</id=>
+</html>
